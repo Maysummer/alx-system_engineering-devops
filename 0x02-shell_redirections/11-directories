@@ -1,1 +1,2 @@
-#!/bin/bash\nls -lR |grep ^d | wc -l
+#!/bin/bash
+ls -lR |grep ^d | wc -l
