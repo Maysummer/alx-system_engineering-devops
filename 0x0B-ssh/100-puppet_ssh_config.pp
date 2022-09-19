@@ -1,6 +1,6 @@
 # make changes to the config file
 
-file { '~/.ssh/config':
+file { '/etc/ssh/ssh_config':
   ensure => file,
   content => "Host *
   	IdentifyFIle ~/.ssh/school
