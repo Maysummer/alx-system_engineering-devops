@@ -11,7 +11,7 @@ file_line { '/etc/nginx/sites-available/default':
 
 file { '/var/www/html/index.html':
   ensure  => present,
-  content => Hello World!,
+  content => 'Hello World!',
 }
 
 service { 'nginx':
