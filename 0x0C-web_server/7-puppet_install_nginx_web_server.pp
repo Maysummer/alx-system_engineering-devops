@@ -1,5 +1,5 @@
 # install Nginx web server
-package { 'Nginx':
+package { 'nginx':
   ensure => installed,
 }
 
@@ -14,7 +14,7 @@ file { '/var/www/html/index.html':
   content => Hello World!,
 }
 
-service { 'Nginx':
+service { 'nginx':
   ensure  => running,
-  require => Package['Nginx'],
+  require => Package['nginx'],
 }
