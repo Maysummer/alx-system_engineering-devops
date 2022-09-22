@@ -5,7 +5,7 @@ package { 'nginx':
 
 file_line { '/etc/nginx/sites-available/default':
   ensure => present,
-  after  => 'service_name _;',
+  after  => 'server_name _;',
   line   => 'rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;',
 }
 
