@@ -1,0 +1,15 @@
+#!/usrbin/env bash
+# Install and configure HAproxy
+
+sudo apt-get -y update
+sudo apt-get -y install haproxy
+
+#fronend
+FE ="
+frontend Local_Server
+
+bind 192.168.1.100:80
+
+mode http
+
+default_backend My_Web_Servers
